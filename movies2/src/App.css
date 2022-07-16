@@ -37,3 +37,16 @@
   }
 }
 
+.movie-modal {
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  border-radius: 5px;
+  padding: 2rem;
+  min-width: 400px;
+  box-shadow: 0px 0px 10px 5px rgba(0,0,0,.02);
+}
