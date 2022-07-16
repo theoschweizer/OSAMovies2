@@ -1,9 +1,9 @@
 import React from 'react'
 
-function MovieCard() {
+function MovieModal() {
   return (
     <div>Hello its me</div>
   )
 }
 
-export default MovieCard
+export default MovieModal
