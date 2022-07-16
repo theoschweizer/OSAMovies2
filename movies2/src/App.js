@@ -1,23 +1,24 @@
 import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Modal from 'react-modal';
+import MovieModal from './movie-modal/MovieModal'
 
 function App() {
+
+  const[isOpen, setIsOpen] = useState(false)
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+     <button onClick={()=>setIsOpen(true)}>open modal</button>
+      <Modal
+        isOpen={isOpen}
+        className='movie-modal'
+        onRequestClose={()=>setIsOpen(false)}
+        centered
         >
-          Learn React
-        </a>
-      </header>
+        <MovieModal closeModel={()=>setIsOpen(false)}/>
+      </Modal>
     </div>
   );
 }
