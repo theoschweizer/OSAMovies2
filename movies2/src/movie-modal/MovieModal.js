@@ -40,7 +40,7 @@ function MovieModal() {
             position: 'absolute',
             width: "320px",
             display:'flex',
-            marginTop: "72px",
+            marginTop: "82px",
             marginLeft: "50px"
           }}
         />
@@ -73,7 +73,7 @@ function MovieModal() {
             position:'absolute',
             display:'flex',
             transform: 'rotate(45deg)',
-            marginTop: "20px",
+            marginTop: "30px",
             marginLeft: "20px"
           }}
         />
