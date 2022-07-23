@@ -1,0 +1,17 @@
+.kungfu{
+    display:flex;
+    align-items: top;
+    justify-content: right;
+    flex-direction: column;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
+
+.kungfu_logo{
+    display:flex;
+    align-items: bottom;
+    justify-content: left;
+    flex-direction: column;
+    left: 60%;
+    transform: translate(-50%, -50%);
+}
